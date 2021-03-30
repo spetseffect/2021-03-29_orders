@@ -41,6 +41,7 @@ public class Main {
                     Map<Integer, Integer> p=new HashMap<Integer, Integer>();
                     p.put(rnd.nextInt(10)+1,rnd.nextInt(10)+1);
                     Storage.putOrder(p);
+                    amountProds = Storage.countProductsInStorage;
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();
